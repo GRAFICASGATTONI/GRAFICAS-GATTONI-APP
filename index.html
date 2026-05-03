@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gráficas Gattoni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Gráficas Gattoni</h1>
+  <p>Calcula tu cotización</p>
+
+  <label>Servicio:</label>
+  <select id="servicio">
+    <option value="9500">Pendón ($9.500 mt2)</option>
+    <option value="42000">Paloma publicitaria ($42.000 mt2)</option>
+    <option value="12500">Etiquetas adhesivas ($12.500 mt2)</option>
+    <option value="12500">Stickers ($12.500 mt2)</option>
+  </select>
+
+  <label>Metros cuadrados:</label>
+  <input type="number" id="metros" placeholder="Ej: 2">
+
+  <button onclick="calcular()">Calcular</button>
+
+  <h2 id="resultado"></h2>
+
+  <button onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
